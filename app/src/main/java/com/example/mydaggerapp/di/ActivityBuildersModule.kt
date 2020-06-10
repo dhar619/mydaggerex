@@ -4,11 +4,12 @@ import com.example.mydaggerapp.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
+
 @Module
 abstract class ActivityBuildersModule {
 
-    //let dagger know that MainActivity is a client
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [MainActivityModule::class])
+    @CustomScope
     abstract fun contributeMainActivity() : MainActivity
 
 }
