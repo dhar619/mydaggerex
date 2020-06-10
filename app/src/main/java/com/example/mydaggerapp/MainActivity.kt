@@ -1,3 +1,4 @@
+//Singleton example....
 package com.example.mydaggerapp
 
 import android.os.Bundle
