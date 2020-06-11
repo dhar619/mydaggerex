@@ -8,6 +8,8 @@ import dagger.Provides
 class AppModule {
 
     @Provides
+    //@Singleton
+    //uncomment singleton to see the memory address in the log
     fun providesStudent(): Student {
         return Student("Shridhar", 111)
     }
