@@ -1,4 +1,3 @@
-//Scope example...change orentation to show how it work
 package com.example.mydaggerapp
 
 import android.os.Bundle
@@ -7,6 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 import dagger.android.AndroidInjection
 import javax.inject.Inject
 
+/**
+ * Scope example...change orentation to show how it work
+ * someString is from appModule which is singleton
+ * student is from MainActivityModule using Customscope
+ * check the memory address in log by changing the orentation of the device
+ * the activity will be created again
+ */
 class MainActivity : AppCompatActivity() {
 
     private val log: String = "MainActivity"
