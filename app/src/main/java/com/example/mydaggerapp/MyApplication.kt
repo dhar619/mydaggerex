@@ -12,7 +12,7 @@ class MyApplication : Application(), HasAndroidInjector {
     /**
      * Reducing boilerplate code, new version has only HasAndroidInjector not like
      * HasActivityInjector, HasServiceInjector, HasBroadcastReceiverInjector, HasSupportFragmentInjector
-     * need to implement lot of interfaces, so DispatchingAndroidInjector<Any>
+     * need to implement many interfaces, so DispatchingAndroidInjector<Any>
      */
     @Inject
     lateinit var androidInjector: DispatchingAndroidInjector<Any>
