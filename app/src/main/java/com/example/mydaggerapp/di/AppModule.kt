@@ -8,7 +8,7 @@ class AppModule {
 
     @Provides
     fun provideSomeString(): String {
-        return "This is my first Dagger DI."
+        return "This is my first Dagger DI using ViewModel."
     }
 
 }
